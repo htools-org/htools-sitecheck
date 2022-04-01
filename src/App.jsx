@@ -77,7 +77,7 @@ function App() {
         <h2 className="max-w-2xl mx-auto text-lg text-center md:text-xl md:text-left">
           {domain}{" "}
           <span className="text-gray-400">
-            ({data.ipAddress || "couldn't resovle IP"})
+            ({data.ipAddress || "couldn't resolve IP"})
           </span>
         </h2>
 
