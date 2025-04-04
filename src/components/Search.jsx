@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { ReactComponent as SpinnerIcon } from "../assets/icons/spinner.svg";
+import SpinnerIcon from "../assets/icons/spinner.svg?react";
 
 function Search(props) {
   const { setDomain, loading } = props;
@@ -23,13 +23,13 @@ function Search(props) {
       <input
         type="text"
         placeholder="domain name"
-        className="flex-grow px-4 py-2 text-gray-800 bg-gray-100 border-2 border-gray-400 rounded-full outline-none md:text-xl md:border-4 md:py-4 md:px-6 md:min-w-full"
+        className="grow px-4 py-2 text-gray-800 bg-gray-100 border-2 border-gray-400 rounded-full outline-hidden md:text-xl md:border-4 md:py-4 md:px-6 md:min-w-full"
         value={value}
         onChange={(event) => setValue(event.target.value)}
         onKeyDown={(event) => event.key === "Enter" && searchDomain()}
       />
       <button
-        className="flex-shrink-0 w-16 h-16 text-xl bg-gray-200 border border-gray-300 rounded-full"
+        className="shrink-0 w-16 h-16 text-xl bg-gray-200 border border-gray-300 rounded-full"
         onClick={loading ? null : searchDomain}
       >
         {loading ? (

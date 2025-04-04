@@ -1,4 +1,4 @@
-import { ReactComponent as GitHubIcon } from "../assets/icons/github.svg";
+import GitHubIcon from "../assets/icons/github.svg?react";
 
 function Header(props) {
   function goToHome() {

@@ -26,7 +26,7 @@ function MoreInfoTabs(props) {
           <button
             key={idx}
             className={classNames(
-              "text-gray-600 py-4 px-6 block hover:text-gray-500 focus:outline-none text-sm md:text-base",
+              "text-gray-600 py-4 px-6 block hover:text-gray-500 focus:outline-hidden text-sm md:text-base",
               {
                 "text-gray-900 border-b-2 font-bold border-gray-700":
                   idx === selectedTab,
@@ -39,7 +39,7 @@ function MoreInfoTabs(props) {
         ))}
       </nav>
 
-      <div className="p-2 overflow-auto bg-gray-100 border rounded shadow">
+      <div className="p-2 overflow-auto bg-gray-100 border rounded-sm shadow-sm">
         {/* Graph */}
         {selectedTab === 0 && (
           <>

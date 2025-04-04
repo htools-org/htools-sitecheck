@@ -1,7 +1,7 @@
 import { useState } from "react";
 import classNames from "classnames";
-import { ReactComponent as CheckIcon } from "../assets/icons/check.svg";
-import { ReactComponent as ExclamationIcon } from "../assets/icons/exclamation.svg";
+import CheckIcon from "../assets/icons/check.svg?react";
+import ExclamationIcon from "../assets/icons/exclamation.svg?react";
 
 function Checks(props) {
   const { data } = props;
@@ -50,9 +50,9 @@ function Checks(props) {
                 onClick={() => setSelectedCheck(check)}
               >
                 {data[check].ok ? (
-                  <CheckIcon className="flex-shrink-0 w-4 h-4 fill-current" />
+                  <CheckIcon className="shrink-0 w-4 h-4 fill-current" />
                 ) : (
-                  <ExclamationIcon className="flex-shrink-0 w-4 h-4 fill-current" />
+                  <ExclamationIcon className="shrink-0 w-4 h-4 fill-current" />
                 )}
                 <span className="ml-2">
                   {data[check].title || data[check].message}
@@ -64,7 +64,7 @@ function Checks(props) {
       </div>
 
       {/* Right */}
-      <div className="overflow-auto break-words bg-gray-600 rounded-sm shadow">
+      <div className="overflow-auto break-words bg-gray-600 rounded-xs shadow-sm">
         {selectedCheck ? (
           <div className="p-4 space-y-6">
             <p>{data[selectedCheck].desc}</p>

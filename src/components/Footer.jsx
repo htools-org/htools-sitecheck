@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="flex-shrink-0 w-full py-2 text-center bg-gray-100">
+    <div className="shrink-0 w-full py-2 text-center bg-gray-100">
       <p className="text-sm font-medium text-gray-600">
         {" "}
         Made with ♥️ by{" "}

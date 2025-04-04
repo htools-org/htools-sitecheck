@@ -52,7 +52,7 @@ function App() {
     return (
       <>
         <Header clearDomain={() => setDomain("")} />
-        <div className="flex flex-col items-center justify-center flex-grow">
+        <div className="flex flex-col items-center justify-center grow">
           <h1 className="px-4 mb-8 text-center text-gray-600 md:text-2xl">
             Type in a domain to analyze DNS, DNSSEC and DANE.
           </h1>
